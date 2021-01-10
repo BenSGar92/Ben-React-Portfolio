@@ -24,13 +24,23 @@ function Portfolio() {
                 <div className="row">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card">
-                            <a href="https://quikcodepro.herokuapp.com/" target="_blank"><img className="card-img-top" src={image7}/></a>
+                            <a href="https://quikcodepro.herokuapp.com/" target="_blank">
+                                <div class="imageContainer">
+                                    <img className="card-img-top" src={image7}/>
+                                    <div>This application utilizes Node.js, Express, React, MongoDB, Mongoose and various npm packages - QuikCodePro is an improvement of QuikCode allowing users to connect, share, vote and view various code snippets - This app showcases full CRUD functionality within the React framework</div>
+                                </div>
+                            </a>
                             <div className="card-body textGold bg-dark rgba-black-light p-2">QuikCodePro</div>
                         </div>
                     </div>
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card">
-                            <a href="https://group-1-repo.herokuapp.com/" target="_blank"><img className="card-img-top" src={image6}/></a>
+                            <a href="https://group-1-repo.herokuapp.com/" target="_blank">
+                                <div class="imageContainer">
+                                    <img className="card-img-top" src={image6}/>
+                                    <div>Here is some text</div>
+                                </div>
+                            </a>
                             <div className="card-body textGold bg-dark rgba-black-light p-2">QuikCode</div>
                         </div>
                     </div>
@@ -39,13 +49,23 @@ function Portfolio() {
                 <div className="row">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card">
-                            <a href="https://bensgar92.github.io/Weather-Dashboard/" target="_blank"><img className="card-img-top" src={image3}/></a>
+                            <a href="https://bensgar92.github.io/Weather-Dashboard/" target="_blank">
+                                <div class="imageContainer">
+                                    <img className="card-img-top" src={image3}/>
+                                    <div>Here is some text</div>
+                                </div>
+                            </a>
                             <div className="card-body text-primary bg-dark rgba-black-light p-2">Weather Dashboard</div>
                         </div>
                     </div>
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card">
-                            <a href="https://johngarcia144.github.io/city-sidekick/" target="_blank"><img className="card-img-top" src={image4}/></a>
+                            <a href="https://johngarcia144.github.io/city-sidekick/" target="_blank">
+                                <div class="imageContainer"> 
+                                    <img className="card-img-top" src={image4}/>
+                                    <div>Here is some text</div>
+                                </div>
+                            </a>
                             <div className="card-body text-primary bg-dark rgba-black-light p-2">City Sidekick - Group Project</div>
                         </div>
                     </div>
@@ -54,14 +74,23 @@ function Portfolio() {
                 <div className="row">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card">
-                            <a href="https://stark-island-93829.herokuapp.com/" target="_blank"><img className="card-img-top" src={image5}/></a>
-
+                            <a href="https://stark-island-93829.herokuapp.com/" target="_blank">
+                                <div class="imageContainer">    
+                                    <img className="card-img-top" src={image5}/>
+                                    <div>Here is some text</div>
+                                </div>    
+                            </a>
                             <div className="card-body text-primary bg-dark rgba-black-light p-2">Burger Eater</div>
                         </div>
                     </div>
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card">
-                        <a href="https://bensgar92.github.io/Workday-Planner/" target="_blank"><img className="card-img-top" src={image2}/></a>
+                        <a href="https://bensgar92.github.io/Workday-Planner/" target="_blank">
+                            <div class="imageContainer">
+                                <img className="card-img-top" src={image2}/>
+                                <div>Here is some text</div>
+                            </div>
+                        </a>
                         <div className="card-body text-primary bg-dark rgba-black-light p-2">Workday Planner</div>
                         </div>
                     </div>
@@ -70,7 +99,12 @@ function Portfolio() {
                 <div className="row mb-5">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card">
-                            <a href="https://bensgar92.github.io/Password-Generator/" target="_blank"><img className="card-img-top" src={image1}/></a>
+                            <a href="https://bensgar92.github.io/Password-Generator/" target="_blank">
+                                <div class="imageContainer">
+                                    <img className="card-img-top" src={image1}/>
+                                    <div>Here is some text</div>
+                                </div>
+                            </a>
                             <div className="card-body text-primary bg-dark rgba-black-light p-2">Password Generator</div>
                         </div>
                     </div>

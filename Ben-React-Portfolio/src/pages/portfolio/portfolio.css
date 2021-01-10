@@ -1,3 +1,37 @@
 .textGold {
     color:  #D5AD6D;
 }
+
+.imageContainer div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 22px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.imageContainer:hover{
+    cursor: pointer;
+}
+
+.imageContainer:hover div{
+    width: 350px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
+/* .imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+} */
