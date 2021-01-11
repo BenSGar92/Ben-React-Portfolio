@@ -31,6 +31,11 @@ h2 span {
     text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
 }
 
+.jumbotron {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 .test {
     position: relative; 
     top: 200px; 
@@ -42,6 +47,11 @@ h2 span {
 
 .modal-dialog{
     text-align:center;
+}
+
+.mainSpan {
+    text-align: center;
+    width: auto;
 }
 
 .modal-content{

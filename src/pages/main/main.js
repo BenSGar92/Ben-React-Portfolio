@@ -17,29 +17,12 @@ function Main() {
         <div className="background-gray">
             <div>
                 <img className="image" src={mainImage} />
-                    <div>
-                        <h2><span>About Me:</span></h2>
-                        <h2><span>My name is Ben Gardner and I am a recently displaced management professional due to Covid-19.</span></h2><br />
-                        <h2><span>My ambition has always been to learn the languages of the programming world and put them to use to grow my career and help others.</span></h2><br />
-                        <h2><span>This portfolio will showcase the skills that I have developed since taking on coding as a career change.</span></h2><br />
-                        <h2><span>Please see the tab above for my portfolio page and the links below for my attached LinkedIn profile and resume.</span></h2>
+                    <div className="jumbotron">
+                        <h2><span>About Me: My name is Ben Gardner and I am a recently displaced management professional due to Covid-19. Because of this, I have decided on a career change and recently graduated from University of Denver's Coding Bootcamp. The languages and frameworks that I know are HTML, CSS, Javascript, jQuery, Node.js, Express, React, mySQL and MongoDB. This portfolio was created using the React framework to showcase my skills on my path to a career as a full stack web developer. Please see below for my resume, LinkedIn and Github as well as my portfolio tab above for all of my most recent applications.</span></h2>
                     </div>
             </div>
-            {/* currently unable to add linked in tag and need to work on resume modal */}
             <div className="row background-gray">
-                <div className="test screen2 col-sm-12 col-lg-6 pt-4">
-                    <div>
-                        <h1>Linkedin</h1>
-                        <h5>(Click Below To View Profile)</h5>
-                    </div>
-                    <div>
-                        <div className="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="ben-gardner-6567459a">
-                            <a className="LI-simple-link" href={user.linkedinHandle}></a>
-                        </div>
-                    </div>
-                </div>
-                <br />
-                <div className="test screen screen2 col-sm-12 col-lg-6 pt-4">
+                <div className="test screen screen2 col-sm-12 col-lg-12 pt-4">
                     <div>
                         <h1>Resume</h1>
                         <h5>(Click To Enlarge)</h5>

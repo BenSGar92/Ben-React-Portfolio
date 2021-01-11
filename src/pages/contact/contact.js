@@ -48,9 +48,8 @@ function Contact() {
                             <select id="form_need" name="need" className="form-control" required="required" data-error="Please specify your need.">
                                 <option value=""></option>
                                 
-                                <option value="Request order status">I want to employ you because this portfolio is AMAZING!</option>
-                                <option value="Request copy of an invoice">I'm just here to talk smack</option>
-                                <option value="Request quotation">Other</option>
+                                <option value="">This contact form is currently in development</option>
+                                <option value="">Other</option>
                             </select>
                             <div className="help-block with-errors"></div>
                         </div>
