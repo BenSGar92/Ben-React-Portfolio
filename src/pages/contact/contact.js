@@ -1,82 +1,45 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
-function Contact() {
-    return(
+export default function ContactUs() {
 
-<div>   
-    <div className="card">
-        <div className="card-body text-primary bg-dark">
-          Contact
-        </div>
-    </div>
+  function sendEmail(e) {
+    e.preventDefault();
 
+    emailjs.sendForm('service_24zy3ge', 'template_portfolio', e.target, 'user_yIUW8RrV4oA6qxIg9EL6V')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
 
-    <div className="container mb-6 pb-5">
-        <form id="contact-form" method="post" action="contact.php" role="form">
+  }
 
-            <div className="messages"></div>
-        
-            <div className="controls">
-        
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="form-group">
-                            <label for="form_name">Firstname *</label>
-                            <input id="form_name" type="text" name="name" className="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required." />
-                            <div className="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <div className="form-group">
-                            <label for="form_lastname">Lastname *</label>
-                            <input id="form_lastname" type="text" name="surname" className="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required." />
-                            <div className="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="form-group">
-                            <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" className="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required." />
-                            <div className="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <div className="form-group">
-                            <label for="form_need">Please specify your need *</label>
-                            <select id="form_need" name="need" className="form-control" required="required" data-error="Please specify your need.">
-                                <option value=""></option>
-                                
-                                <option value="">This contact form is currently in development</option>
-                                <option value="">Other</option>
-                            </select>
-                            <div className="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="form-group">
-                            <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" className="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                            <div className="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div className="col-md-12 mb-5">
-                        <input type="submit" className="btn btn-success btn-send" value="Send message" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-12">
-                        <p className="text-muted" />
-                    </div>
-                </div>
+  return(
+    <div>
+      <div className="container">
+        <form onSubmit={sendEmail}>
+          <div className="row pt-5 mx-auto">
+            <div className="col-8 form-group mx-auto">
+              <small>*This email form works using EmailJS*</small>
+              <input type="text" className="form-control" placeholder="Name" name="name"></input>
             </div>
-        
+            <div className="col-8 form-group mx-auto">
+              <input type="email" className="form-control" placeholder="Email Address" name="email"></input>
+            </div>
+            <div className="col-8 form-group mx-auto">
+              <input type="text" className="form-control" placeholder="Subject" name="subject"></input>
+            </div>
+            <div className="col-8 form-group mx-auto">
+              <textarea className="form-control" cols="30" rows="8" placeholder="Your Message" name="message"></textarea>
+            </div>
+            <div className="col-8 form-group mx-auto">
+              <input type="submit" className="btn btn-info" value="Send Message"></input>
+            </div>
+          </div>
         </form>
+      </div>
     </div>
-</div>
-    )
+  )
 }
-export default Contact;
