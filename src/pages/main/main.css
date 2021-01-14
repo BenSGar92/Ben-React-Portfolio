@@ -75,6 +75,15 @@ h2 span {
     display:inline-block;
 }
 
+small {
+    position: absolute; 
+    color: white; 
+    top: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 768px) {
     /* The body's bg color will be #333 */
   .screen {
