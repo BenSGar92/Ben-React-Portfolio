@@ -83,7 +83,7 @@ function Nav() {
           </div>
           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              <li>
                   <a className="nav-link" id="city" href="#"></a>
               </li>
               <li className="nav-item">

@@ -19,6 +19,8 @@ h2 {
     text-align: center;
     justify-content: center;
     margin: 0;
+    width: 75%;
+    padding-left: 25%;
 }
 
 h2 span { 
@@ -36,13 +38,28 @@ h2 span {
     margin-right: 150px;
 }
 
-.test {
-    position: relative; 
-    top: 200px; 
-    left: 0; 
+.certificate {
     width: 100%;
+}
+
+.accordionTitle {
+    color: #007bff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.transparent {
+    background-color: transparent!important;
+}
+
+.accordionTest {
+    top: 100px;
+}
+
+.accordionTest2 {
+    width: 80%;
     text-align: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal-dialog{
@@ -63,6 +80,11 @@ h2 span {
   .screen {
       padding-bottom: 100px;
       margin-bottom: 100px;
+  }
+
+  .image {
+      background-repeat: repeat-x;
+      background-repeat: repeat-y;
   }
 }
 
