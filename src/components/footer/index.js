@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import "./footer.scss"
 
 
 function Footer(props) {
@@ -9,7 +10,12 @@ function Footer(props) {
 
         
         <div className="container">
-            <ul className="list-unstyled list-inline text-center py-1">
+            <ul className="list-unstyled list-inline text-center m-0">
+                <li className="list-inline-item">
+                    <div class='ball'>
+                        <div></div>
+                    </div>
+                </li>
                 <li className="list-inline-item">
                     <Link to="/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"} className="btn btn-outline-primary btn-rounded">
                     Contact
@@ -20,6 +26,11 @@ function Footer(props) {
                 </li>
                 <li className="list-inline-item">
                     <a href="https://github.com/BenSGar92" target="_blank" className="btn btn-outline-primary btn-rounded">Github</a>
+                </li>
+                <li className="list-inline-item">
+                    <div class='ball'>
+                        <div></div>
+                    </div>
                 </li>
             </ul>
         </div>
