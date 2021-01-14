@@ -77,7 +77,7 @@ function Portfolio() {
                             <a href="https://stark-island-93829.herokuapp.com/" target="_blank">
                                 <div className="imageContainer">    
                                     <img className="card-img-top" src={image5}/>
-                                    <div>This application showcases developer skills usaing languages and frameworks such as MySQL, Express, Handlebars, MVC design pattern, and a homemade ORM.</div>
+                                    <div>This application showcases developer skills using languages and frameworks such as MySQL, Express, Handlebars, MVC design pattern, and a homemade ORM.</div>
                                 </div>    
                             </a>
                             <div className="card-body text-primary bg-dark rgba-black-light p-2">Burger Eater</div>
