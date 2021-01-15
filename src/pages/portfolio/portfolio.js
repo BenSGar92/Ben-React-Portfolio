@@ -10,7 +10,7 @@ import "./portfolio.css"
 
 function Portfolio() {
     return(
-        <div>
+        <div className="imagePortfolio">
             <div className="card-body text-primary text-center bg-dark">
             Application and Project Portfolio
             </div>

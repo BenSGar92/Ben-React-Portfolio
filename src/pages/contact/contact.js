@@ -18,7 +18,7 @@ export default function ContactUs() {
   }
 
   return(
-    <div>
+    <div className="imageContact">
       <div className="container">
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
@@ -36,7 +36,7 @@ export default function ContactUs() {
               <textarea className="form-control" cols="30" rows="8" placeholder="Your Message" name="message"></textarea>
             </div>
             <div className="col-8 form-group mx-auto">
-              <input type="submit" className="btn btn-info" value="Send Message"></input>
+              <input type="submit" className="btn btn-primary" value="Send Message"></input>
             </div>
           </div>
         </form>

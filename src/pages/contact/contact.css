@@ -1,3 +1,12 @@
 small {
     cursor: default;
+    color: white;
+}
+
+.imageContact {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/mainImage.jpeg");
+    /* background-repeat: repeat-y; */
 }
