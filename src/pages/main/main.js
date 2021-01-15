@@ -10,11 +10,6 @@ import cartoon from "../../images/cartoon-me.png"
 
 function Main() {
 
-    //var for linkedin url
-    const user = {
-        linkedinHandle: "https://www.linkedin.com/in/ben-gardner-6567459a?trk=profile-badge"
-    }
-
     let first = useRef(null);
     let second = useRef(null);
     let third = useRef(null);
@@ -94,7 +89,7 @@ function Main() {
                             <h1>Click Here for my Certification!</h1>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
-                            <Card.Body><img className="certificate" src={certificate}/></Card.Body>
+                            <Card.Body><img className="certificate" src={certificate} alt="certificate"/></Card.Body>
                             </Accordion.Collapse>
                         </Card>
                     </Accordion>
@@ -106,7 +101,7 @@ function Main() {
                             <h1>Click Here for Cartoon Me!</h1>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
-                            <Card.Body><img className="certificate" src={cartoon}/></Card.Body>
+                            <Card.Body><img className="certificate" src={cartoon} alt="cartoon"/></Card.Body>
                             </Accordion.Collapse>
                         </Card>
                     </Accordion>
@@ -118,7 +113,7 @@ function Main() {
                             <h1>Click Here for Resume!</h1>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
-                            <Card.Body><img className="resume" src={resume}/></Card.Body>
+                            <Card.Body><img className="resume" src={resume} alt="resume"/></Card.Body>
                             </Accordion.Collapse>
                         </Card>
                     </Accordion>

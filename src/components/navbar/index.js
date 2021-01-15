@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom"
-import $ from 'jquery';
+// import $ from 'jquery';
 import "./navbar.css"
 
 function Nav() {
