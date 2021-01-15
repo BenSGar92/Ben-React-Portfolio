@@ -22,10 +22,10 @@ function Footer(props) {
                     </Link>
                 </li>
                 <li className="list-inline-item">
-                    <a href="https://www.linkedin.com/in/ben-gardner-6567459a/" target="_blank" className="btn btn-outline-primary btn-rounded">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/ben-gardner-6567459a/" className="btn btn-outline-primary btn-rounded">Linkedin</a>
                 </li>
                 <li className="list-inline-item">
-                    <a href="https://github.com/BenSGar92" target="_blank" className="btn btn-outline-primary btn-rounded">Github</a>
+                    <a href="https://github.com/BenSGar92" className="btn btn-outline-primary btn-rounded">Github</a>
                 </li>
                 <li className="list-inline-item">
                     <div class='ball'>
