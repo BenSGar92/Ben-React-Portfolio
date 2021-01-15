@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import "./footer.scss"
-
+import "./footer.css"
+import logo from '../../images/ben-logo.png'
 
 function Footer() {
   return (
     <div>
     <footer className="page-footer font-small py-1 bg-dark text-white-50 fixed-bottom">
 
-        
+    <img className="logo" src={logo}/>
         <div className="container">
             <ul className="list-unstyled list-inline text-center m-0">
                 <li className="list-inline-item">

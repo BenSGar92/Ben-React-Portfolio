@@ -1,0 +1,15 @@
+.logo {
+    padding: 15px;
+    list-style-type: none!important;
+    position:absolute;
+    left: 0;
+    width: 110px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .logo {
+        visibility: hidden;
+    }
+
+}
