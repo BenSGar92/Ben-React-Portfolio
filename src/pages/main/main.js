@@ -78,7 +78,7 @@ function Main() {
                     <div className="row">
                         <div className="col-12">
                             <div ref={el => fifth = el}>
-                                <div className="about">My name is Ben Gardner and I am a recently displaced management professional due to Covid-19. Because of this, I have decided on a career change and recently graduated from University of Denver's Coding Bootcamp. The languages and frameworks that I know are HTML, CSS, Javascript, jQuery, Node.js, Express, React, mySQL and MongoDB. This portfolio was created using the React framework to showcase my skills on my career path as a full stack web developer. Please see below for my resume, certification, LinkedIn and Github as well as my portfolio tab above for all of my most recent applications.</div>
+                                <div className="about">My name is Ben Gardner and I am a recently displaced management professional due to Covid-19. Because of this, I have decided on a career change and recently graduated from University of Denver's Coding Bootcamp. The languages and frameworks that I know are HTML, CSS, Javascript, jQuery, Node.js, Express, GSAP, React, mySQL and MongoDB. This portfolio was created using the React framework to showcase my skills on my career path as a full stack web developer. Please see below for my resume, certification, LinkedIn and Github as well as my portfolio tab above for all of my most recent applications.</div>
                             </div>
                         </div>
                     </div>
