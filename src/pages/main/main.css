@@ -1,6 +1,8 @@
 .image { 
     position: absolute; 
-    width: 100%; /* for IE 6 */
+    width: 100%;
+    background-image: url("../../images/mainImage.jpeg");
+    background-repeat: repeat-y;
 }
 
 html {
@@ -11,27 +13,71 @@ html {
     background-color: gray;
 }
 
-h2 { 
+.mainCard {
+    background-color: transparent!important;
+    border: none!important;
+    text-align: center;
+    width: 80%;
+    margin: 0 20%;
+    padding-top: 5%;
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+}
+
+.hi {
+    color: white;
+    font: bold 80px/45px Helvetica, Sans-Serif;
+    text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.developer {
+    color: white;
+    font: bold 55px/40px Helvetica, Sans-Serif;
+    text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.aboutMe {
+    color: white;
+    font: bold 28px/40px Helvetica, Sans-Serif;
+    text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+    cursor: default;
     position: relative; 
-    top: 100px; 
     left: 0; 
     width: 100%;
-    text-align: center;
+    text-align: left;
     justify-content: center;
-    margin: 0;
     width: 75%;
     padding-left: 25%;
 }
 
-h2 span { 
+.about {
+    color: white;
+    font: bold 20px/40px Helvetica, Sans-Serif;
+    text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+    cursor: default;
+    position: relative; 
+    left: 0; 
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    width: 75%;
+    padding-left: 25%;
+}
+
+/* h2 span { 
     color: white; 
     font: bold 24px/45px Helvetica, Sans-Serif; 
     letter-spacing: -1px;  
-    background: rgb(0, 0, 0); /* fallback color */
+    background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.4);
     padding: 5px;
     text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
-}
+} */
 
 .jumbotron {
     margin-left: 150px;
@@ -42,6 +88,10 @@ h2 span {
     width: 100%;
 }
 
+.resume {
+    width: 50%;
+}
+
 .accordionTitle {
     color: #007bff;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -49,10 +99,22 @@ h2 span {
 
 .transparent {
     background-color: transparent!important;
+    border: none!important;
 }
 
 .accordionTest {
     top: 100px;
+    margin-bottom: 400px;
+}
+
+.accordionCert {
+    top: 100px;
+    margin-bottom: 100px;
+}
+
+.accordionMe {
+    top: 100px;
+    margin-bottom: 0px;
 }
 
 .accordionTest2 {
@@ -75,17 +137,55 @@ h2 span {
     display:inline-block;
 }
 
-@media screen and (max-width: 768px) {
-    /* The body's bg color will be #333 */
-  .screen {
-      padding-bottom: 100px;
-      margin-bottom: 100px;
-  }
+@media screen and (max-width: 534px) {
 
-  .image {
-      background-repeat: repeat-x;
-      background-repeat: repeat-y;
-  }
+    .hi {
+        color: white;
+        font: bold 50px/45px Helvetica, Sans-Serif;
+        text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+        text-align: left;
+        padding: 0px 0px;
+    }
+    
+    .developer {
+        color: white;
+        font: bold 10px Helvetica, Sans-Serif;
+        text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+        text-align: left;
+        padding: 0px 0px;
+    }
+
+}
+
+@media screen and (max-width: 962px) {
+    .accordionCert {
+        top: 100px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .hi {
+        color: white;
+        font: bold 50px/45px Helvetica, Sans-Serif;
+        text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+        text-align: left;
+        padding: 0px 0px;
+    }
+    
+    .developer {
+        color: white;
+        font: bold 30px/40px Helvetica, Sans-Serif;
+        text-shadow: -1.4px 0 black, 0 1.4px black, 1.4px 0 black, 0 -1.4px black;
+        text-align: left;
+        padding: 0px 0px;
+    }
+
+    .resume {
+        width: 100%;
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -93,6 +193,10 @@ h2 span {
   .screen2 {
     padding-bottom: 100px;
     margin-bottom: 100px;
+  }
+
+  .resume {
+      width: 100%;
   }
 }
 
@@ -103,3 +207,9 @@ h2 span {
     margin-bottom: 100px;
   }
 }
+
+  @media screen and (max-width: 1340px) {
+      .resume {
+        width: 65%;
+      }
+  }
