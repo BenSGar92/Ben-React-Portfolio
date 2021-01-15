@@ -9,17 +9,11 @@ import image7 from "../../images/quikcodepro.png"
 import "./portfolio.css"
 
 function Portfolio() {
-
-
     return(
         <div>
-
             <div className="card-body text-primary text-center bg-dark">
             Application and Project Portfolio
             </div>
-
-
-
             <div className="container pb-5 mb-5">
                 <div className="row">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
@@ -37,7 +31,7 @@ function Portfolio() {
                         <div className="card border-dark">
                             <a href="https://group-1-repo.herokuapp.com/">
                                 <div className="imageContainer">
-                                    <img className="card-img-top" src={image6} app="quikcode-project"/>
+                                    <img className="card-img-top" src={image6} alt="quikcode-project"/>
                                     <div>This application utilizes Express, Handlebars, Sequelize, MySQL2 and Passport Authentication - QuikCode allows users to make code snippets utilizing a built in Ace Editor and save them privately or publicly. </div>
                                 </div>
                             </a>
@@ -45,7 +39,6 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
-
                 <div className="row">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card border-dark">
@@ -70,7 +63,6 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
-
                 <div className="row">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card border-dark">
@@ -95,7 +87,6 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
-
                 <div className="row mb-5">
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
                         <div className="card border-dark">
@@ -108,7 +99,6 @@ function Portfolio() {
                             <div className="card-body text-primary bg-dark rgba-black-light p-2">Password Generator</div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
