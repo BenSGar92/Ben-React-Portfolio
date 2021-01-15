@@ -1,12 +1,15 @@
 import React, {useRef, useEffect} from "react";
 import "./main.css";
 import {Accordion, Card} from "react-bootstrap";
-import { TimelineLite, Power3} from 'gsap';
+import {gsap, Power3} from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin'
 
 //assets
 import certificate from "../../images/ben-gardner-certificate.png";
 import resume from "../../images/ben-gardner-new-resume.png"
 import cartoon from "../../images/cartoon-me.png"
+
+gsap.registerPlugin(CSSPlugin)
 
 function Main() {
 
@@ -15,7 +18,7 @@ function Main() {
     let third = useRef(null);
     let fourth = useRef(null);
     let fifth = useRef(null);
-    let tl = new TimelineLite({delay: .8});
+    let tl = new gsap.timeline({delay: .8});
 
     useEffect(() => {
         const first1 = first.children[0];
