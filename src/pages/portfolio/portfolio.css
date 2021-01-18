@@ -40,3 +40,9 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/mainImage.jpeg");
     background-repeat: repeat-y;
 }
+
+.portfolioHeader {
+    color: #007bff;
+    font: bold 45px/40px Helvetica, Sans-Serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

@@ -3,7 +3,6 @@ import "./main.css";
 import {Accordion, Card} from "react-bootstrap";
 import {gsap, Power3} from 'gsap';
 import { CSSPlugin } from 'gsap/CSSPlugin'
-
 //assets
 import certificate from "../../images/ben-gardner-certificate.png";
 import resume from "../../images/ben-gardner-new-resume.png"
@@ -19,6 +18,9 @@ function Main() {
     let fourth = useRef(null);
     let fifth = useRef(null);
     let tl = new gsap.timeline({delay: .8});
+    let cert = useRef(null);
+    let me = useRef(null);;
+    let res = useRef(null);
 
     useEffect(() => {
         const first1 = first.children[0];
@@ -37,8 +39,10 @@ function Main() {
         .from([third1], 1, {y:20, opacity: 0, ease: Power3.easeOut}, 2.4)
         .from([fourth1], 1, {y:20, opacity: 0, ease: Power3.easeOut}, 3.4)
         .from([fifth1], 1, {y:20, opacity: 0, ease: Power3.easeOut}, 5)
+        .from(cert, { duration: 2.2, x: '-200%', ease: 'bounce'})
+        .from(me, { duration: 2.2, x: '200%', ease: 'bounce'})
+        .from(res, { duration: 2.2, y: '400%', ease: 'bounce'})
         })
-
 
     return(
         <div className="image">
@@ -55,7 +59,7 @@ function Main() {
                             <div className="row">
                                 <div className="col-12">
                                     <div ref={el => second = el}>
-                                        <div className="hi">I'm Ben,</div>
+                                        <div className="hi">I'm <span>Ben</span>,</div>
                                     </div>
                                 </div>
                             </div>
@@ -85,11 +89,11 @@ function Main() {
             </div>
             
             <div className="row">
-                <div className="accordionCert col-sm-12 col-md-6 col-lg-6">
+                <div className="accordionCert col-sm-12 col-md-6 col-lg-6" ref={el => cert = el}>
                     <Accordion className="accordionTest2" defaultActiveKey="1">
                         <Card className="transparent">
                             <Accordion.Toggle className="accordionTitle" as={Card.Header} eventKey="0">
-                            <h1>Click Here for my Certification!</h1>
+                            <h1>Click Here for my <span>Certification</span>.</h1>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
                             <Card.Body><img className="certificate" src={certificate} alt="certificate"/></Card.Body>
@@ -97,11 +101,11 @@ function Main() {
                         </Card>
                     </Accordion>
                 </div>
-                <div className="accordionMe col-sm-12 col-md-6 col-lg-6">
+                <div className="accordionMe col-sm-12 col-md-6 col-lg-6" ref={el => me = el}>
                     <Accordion className="accordionTest2" defaultActiveKey="1">
                         <Card className="transparent">
                             <Accordion.Toggle className="accordionTitle" as={Card.Header} eventKey="0">
-                            <h1>Click Here for Cartoon Me!</h1>
+                            <h1>Click Here for <span>Cartoon Me</span>.</h1>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
                             <Card.Body><img className="certificate" src={cartoon} alt="cartoon"/></Card.Body>
@@ -109,11 +113,11 @@ function Main() {
                         </Card>
                     </Accordion>
                 </div>
-                <div className="accordionTest col-sm-12 col-md-12 col-lg-12">
+                <div className="accordionTest col-sm-12 col-md-12 col-lg-12" ref={el => res = el}>
                     <Accordion className="accordionTest2" defaultActiveKey="1">
                         <Card className="transparent">
                             <Accordion.Toggle className="accordionTitle" as={Card.Header} eventKey="0">
-                            <h1>Click Here for Resume!</h1>
+                            <h1>Click Here for my <span>Resume</span>.</h1>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
                             <Card.Body><img className="resume" src={resume} alt="resume"/></Card.Body>

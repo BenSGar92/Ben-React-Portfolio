@@ -34,6 +34,10 @@ html {
     cursor: default;
 }
 
+.hi span {
+    color: #007bff;
+}
+
 .developer {
     color: white;
     font: bold 55px/40px Helvetica, Sans-Serif;
@@ -74,6 +78,9 @@ html {
 h1 {
     cursor: default;
 }
+h1 span {
+    color: #007bff;
+}
 
 .jumbotron {
     margin-left: 150px;
@@ -89,7 +96,8 @@ h1 {
 }
 
 .accordionTitle {
-    color: #007bff;
+    color: white;
+    font: bold Helvetica, Sans-Serif;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
