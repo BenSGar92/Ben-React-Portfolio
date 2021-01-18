@@ -9,7 +9,7 @@ function Footer() {
     <div>
     <footer className="page-footer font-small py-1 bg-dark text-white-50 fixed-bottom">
 
-    <img className="logo" src={logo}/>
+    <img className="logo" src={logo} alt="personal-logo"/>
         <div className="container">
             <ul className="list-unstyled list-inline text-center m-0">
                 <li className="list-inline-item">
