@@ -20,7 +20,6 @@ function Main() {
     let tl = new gsap.timeline({delay: .8});
     let cert = useRef(null);
     let me = useRef(null);;
-    let res = useRef(null);
 
     useEffect(() => {
         const first1 = first.children[0];
@@ -41,7 +40,6 @@ function Main() {
         .from([fifth1], 1, {y:20, opacity: 0, ease: Power3.easeOut}, 5)
         .from(cert, { duration: 2.2, x: '-200%', ease: 'bounce'})
         .from(me, { duration: 2.2, x: '200%', ease: 'bounce'})
-        .from(res, { duration: 2.2, y: '400%', ease: 'bounce'})
         })
 
     return(
@@ -82,7 +80,7 @@ function Main() {
                     <div className="row">
                         <div className="col-12">
                             <div ref={el => fifth = el}>
-                                <div className="about">My name is Ben Gardner and I am a recently displaced management professional due to Covid-19. Because of this, I have decided on a career change and recently graduated from University of Denver's Coding Bootcamp. The languages and frameworks that I know are HTML, CSS, Javascript, jQuery, Node.js, Express, GSAP, React, mySQL and MongoDB. This portfolio was created using the React framework to showcase my skills on my career path as a full stack web developer. Please see below for my resume, certification, LinkedIn and Github as well as my portfolio tab above for all of my most recent applications.</div>
+                                <div className="about">My name is Ben Gardner and I am a recently displaced management professional due to Covid-19. Because of this, I have decided on a career change and recently graduated from University of Denver's Coding Bootcamp. The languages and frameworks that I know are HTML, CSS, Javascript, jQuery, Node.js, Express, GSAP, React, mySQL and MongoDB. This portfolio was created using the React framework to showcase my skills on my career path as a full stack web developer. Please see below for my coding certification, LinkedIn and Github as well as the tabs above for my resume and portfolio page showcasing all of my most recent applications.</div>
                             </div>
                         </div>
                     </div>
@@ -109,18 +107,6 @@ function Main() {
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0">
                             <Card.Body><img className="certificate" src={cartoon} alt="cartoon"/></Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                </div>
-                <div className="accordionTest col-sm-12 col-md-12 col-lg-12" ref={el => res = el}>
-                    <Accordion className="accordionTest2" defaultActiveKey="1">
-                        <Card className="transparent">
-                            <Accordion.Toggle className="accordionTitle" as={Card.Header} eventKey="0">
-                            <h1>Click Here for my <span>Resume</span>.</h1>
-                            </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="0">
-                            <Card.Body><img className="resume" src={resume} alt="resume"/></Card.Body>
                             </Accordion.Collapse>
                         </Card>
                     </Accordion>

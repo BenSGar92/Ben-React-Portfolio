@@ -18,6 +18,9 @@ function Navigation() {
           <Link to="/" className={window.location.pathname === "/" || window.location.pathname === "/main" ? "nav-link active" : "nav-link"}>
             Homepage
           </Link>
+          <Link to="/resume" className={window.location.pathname === "/resume" ? "nav-link active" : "nav-link"}>
+            Resume
+          </Link>
           <Link to="/portfolio" className={window.location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
             Portfolio
           </Link>
