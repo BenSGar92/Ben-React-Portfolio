@@ -6,6 +6,7 @@ import image4 from "../../images/city-sidekick.png"
 import image5 from "../../images/burger-eater.png"
 import image6 from "../../images/quikcode.png"
 import image7 from "../../images/quikcodepro.png"
+import image8 from "../../images/windows95-desktop.jpg"
 import "./portfolio.css"
 
 function Portfolio() {
@@ -93,10 +94,21 @@ function Portfolio() {
                             <a href="https://bensgar92.github.io/Password-Generator/">
                                 <div className="imageContainer">
                                     <img className="card-img-top" src={image1} alt="password-app"/>
-                                    <div>This application uses jQuery and Javascript allowing a user to generate passwords after specifying length, case, numbers and symbols</div>
+                                    <div className="">This application uses jQuery and Javascript allowing a user to generate passwords after specifying length, case, numbers and symbols</div>
                                 </div>
                             </a>
-                            <div className="title card-body text-primary bg-dark rgba-black-light p-2">Password Generator</div>
+                            <div className="title card-body text-primary bg-dark rgba-black-light p-2 divText">Password Generator</div>
+                        </div>
+                    </div>
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                        <div className="card border-dark">
+                        <a href="https://react-windows95.herokuapp.com/">
+                            <div className="imageContainer">
+                                <img className="card-img-top image8" src={image8} alt="planner-app"/>
+                                <div>In Progress Windows95 application</div>
+                            </div>
+                        </a>
+                        <div className="title card-body text-primary bg-dark rgba-black-light p-2">Windows95</div>
                         </div>
                     </div>
                 </div>
