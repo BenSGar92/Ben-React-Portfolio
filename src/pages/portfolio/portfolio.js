@@ -17,7 +17,7 @@ function Portfolio() {
             </div>
             <div className="container pb-5 mb-5">
                 <div className="row">
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                             <a href="https://quikcodepro.herokuapp.com/">
                                 <div className="imageContainer">
@@ -28,7 +28,7 @@ function Portfolio() {
                             <div className="title card-body textGold bg-dark rgba-black-light p-2">QuikCodePro</div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                             <a href="https://group-1-repo.herokuapp.com/">
                                 <div className="imageContainer">
@@ -41,7 +41,7 @@ function Portfolio() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                             <a href="https://bensgar92.github.io/Weather-Dashboard/">
                                 <div className="imageContainer">
@@ -52,7 +52,7 @@ function Portfolio() {
                             <div className="title card-body text-primary bg-dark rgba-black-light p-2">Weather Dashboard</div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                             <a href="https://johngarcia144.github.io/city-sidekick/">
                                 <div className="imageContainer"> 
@@ -65,7 +65,7 @@ function Portfolio() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                             <a href="https://stark-island-93829.herokuapp.com/">
                                 <div className="imageContainer">    
@@ -76,7 +76,7 @@ function Portfolio() {
                             <div className="title card-body text-primary bg-dark rgba-black-light p-2">Burger Eater</div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                         <a href="https://bensgar92.github.io/Workday-Planner/">
                             <div className="imageContainer">
@@ -89,22 +89,22 @@ function Portfolio() {
                     </div>
                 </div>
                 <div className="row mb-5">
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                             <a href="https://bensgar92.github.io/Password-Generator/">
                                 <div className="imageContainer">
                                     <img className="card-img-top" src={image1} alt="password-app"/>
-                                    <div className="">This application uses jQuery and Javascript allowing a user to generate passwords after specifying length, case, numbers and symbols</div>
+                                    <div>This application uses jQuery and Javascript allowing a user to generate passwords after specifying length, case, numbers and symbols</div>
                                 </div>
                             </a>
-                            <div className="title card-body text-primary bg-dark rgba-black-light p-2 divText">Password Generator</div>
+                            <div className="title card-body text-primary bg-dark rgba-black-light p-2">Password Generator</div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-6 pb-3">
+                    <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                         <a href="https://react-windows95.herokuapp.com/">
                             <div className="imageContainer">
-                                <img className="card-img-top image8" src={image8} alt="planner-app"/>
+                                <img className="card-img-top image8" src={image8} alt="windows95-app"/>
                                 <div>In Progress Windows95 application</div>
                             </div>
                         </a>
