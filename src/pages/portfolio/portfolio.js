@@ -103,7 +103,7 @@ function Portfolio() {
                     <div className="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 pb-3">
                         <div className="card border-dark">
                         <a href="https://react-windows95.herokuapp.com/">
-                            <div className="imageContainer">
+                            <div className="imageContainer project8">
                                 <img className="card-img-top image8" src={image8} alt="windows95-app"/>
                                 <div>In Progress Windows95 application</div>
                             </div>
