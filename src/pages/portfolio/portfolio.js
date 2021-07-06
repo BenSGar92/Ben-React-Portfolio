@@ -105,7 +105,7 @@ function Portfolio() {
                         <a href="https://react-windows95.herokuapp.com/">
                             <div className="imageContainer project8">
                                 <img className="card-img-top image8" src={image8} alt="windows95-app"/>
-                                <div>In Progress Windows95 application</div>
+                                <div>In Progress Windows95 application (please refresh page upong Heroku error)</div>
                             </div>
                         </a>
                         <div className="title card-body text-primary bg-dark rgba-black-light p-2">Windows95</div>
